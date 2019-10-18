@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/relative_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+
+        <TextView
+            android:id="@+id/content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-condensed"
+            android:padding="10dp"
+            android:textColor="#000"
+            android:textSize="16sp"
+            tools:text="Sample" />
+
+        <TextView
+            android:id="@+id/content_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/content"
+            android:layout_alignParentStart="true"
+            android:layout_margin="10dp"
+            android:layout_marginStart="0dp"
+            android:fontFamily="sans-serif-condensed"
+            android:textColor="#000"
+            android:textSize="14sp"
+            tools:text="Sample"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="0dp" />
+
+
+        <LinearLayout
+            android:id="@+id/linear_layout_two"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/content"
+            android:gravity="end"
+            android:orientation="horizontal"
+            android:layout_marginLeft="50dp">
+
+            <ImageButton
+                android:id="@+id/callIcon"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:visibility="gone"
+                android:layout_margin="15dp"
+                android:background="@null"
+                android:layout_gravity="end"
+                android:scaleType="fitCenter"
+                android:src="@drawable/call" />
+
+            <ImageButton
+                android:id="@+id/textIcon"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@null"
+                android:layout_margin="15dp"
+                android:layout_gravity="end"
+                android:visibility="gone"
+                android:scaleType="fitCenter"
+                android:src="@drawable/message" />
+
+            <ImageButton
+                android:id="@+id/emailIcon"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_margin="15dp"
+                android:background="@null"
+                android:visibility="gone"
+                android:layout_gravity="end"
+                android:scaleType="fitCenter"
+                android:src="@drawable/email" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</LinearLayout>
